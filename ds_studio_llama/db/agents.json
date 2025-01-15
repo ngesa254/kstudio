@@ -1,0 +1,78 @@
+{
+  "agents": [
+    {
+      "id": 1,
+      "name": "Summarizer",
+      "description": "An agent that summarizes text in less than 5 words",
+      "type": "conversational",
+      "status": "draft",
+      "configuration": {},
+      "prompt_template": "Summarize the following text in less than 5 words:\n\n{input}\n\nSummary:",
+      "version": "0.1.0",
+      "metrics": {
+        "total_conversations": 0,
+        "success_rate": 0,
+        "average_response_time": 0,
+        "error_rate": 0
+      },
+      "created_at": "2025-01-07T11:02:46.166088",
+      "updated_at": null
+    },
+    {
+      "id": 2,
+      "name": "Summarizer",
+      "description": "An agent that summarizes text in less than 5 words",
+      "type": "conversational",
+      "status": "draft",
+      "configuration": {},
+      "prompt_template": "Summarize the following text in less than 5 words:\n\n{input}\n\nSummary:",
+      "version": "0.1.0",
+      "metrics": {
+        "total_conversations": 0,
+        "success_rate": 0,
+        "average_response_time": 0,
+        "error_rate": 0
+      },
+      "created_at": "2025-01-07T11:08:28.041302",
+      "updated_at": null
+    },
+    {
+      "id": 3,
+      "name": "QBR Assistant",
+      "description": "An agent that provides insights from QBR documents",
+      "type": "rag",
+      "status": "testing",
+      "configuration": {
+        "collection_name": "test_collection"
+      },
+      "prompt_template": "Based on the following context, please provide a summary:\n\nContext: {context}\nQuestion: {question}\n\nAnswer:",
+      "version": "0.1.0",
+      "metrics": {
+        "total_conversations": 0,
+        "success_rate": 0,
+        "average_response_time": 0,
+        "error_rate": 0
+      },
+      "created_at": "2025-01-07T11:11:14.117530",
+      "updated_at": "2025-01-07T12:36:47.079260"
+    },
+    {
+      "id": 4,
+      "name": "test1",
+      "description": "this is an agent that categorises text",
+      "type": "conversational",
+      "status": "draft",
+      "configuration": {},
+      "prompt_template": "you are an expert at categorising text as:\n1. long text\n2. show text\n\ncategorize this into the groups\n{input}\n\nResponse:",
+      "version": "0.1.0",
+      "metrics": {
+        "total_conversations": 0,
+        "success_rate": 0,
+        "average_response_time": 0,
+        "error_rate": 0
+      },
+      "created_at": "2025-01-07T11:20:42.504288",
+      "updated_at": null
+    }
+  ]
+}

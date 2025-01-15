@@ -1,0 +1,6 @@
+llama-agent
+python-dotenv
+langchain
+langchain-community
+pydantic
+boto3
