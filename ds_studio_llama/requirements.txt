@@ -9,7 +9,8 @@ boto3==1.35.81
 botocore==1.35.81
 certifi==2024.12.14
 cffi==1.17.1
-
+black
+autopep8
 langchain==0.3.14
 langchain-community==0.3.14
 langchain-core==0.3.29
@@ -54,3 +55,5 @@ python-pptx==0.6.22
 unstructured>=0.11.0
 unstructured[pptx]>=0.11.0
 pdfminer.six>=20221105
+yapf
+isort

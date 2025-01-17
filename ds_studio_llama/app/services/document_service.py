@@ -22,7 +22,7 @@ import pandas as pd
 from pptx import Presentation
 
 # Configure logging
-log_file = "/Users/hmwangila/Documents/Documents/datascience_projects/2024/ds_studio_llama/ds_studio_llama/logs/agent_framework.log"
+log_file = "/workspaces/kstudio/ds_studio_llama/logs/document_service_logs.log"
 os.makedirs(os.path.dirname(log_file), exist_ok=True)
 
 # Configure root logger
@@ -53,7 +53,7 @@ class DocumentService:
         logger.info("LLM disabled for indexing")
         
         # Set up embedding model
-        model_path = "/Users/hmwangila/Documents/Documents/datascience_projects/2024/ds_studio_llama/ds_studio_llama/all-MiniLM-L6-v2"
+        model_path = "sentence-transformers/all-MiniLM-L6-v2"
         self.embed_model = HuggingFaceEmbedding(
             model_name=model_path,
             trust_remote_code=True
