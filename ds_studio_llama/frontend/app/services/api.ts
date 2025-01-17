@@ -34,7 +34,7 @@ export interface AgentInteractionResponse {
   metadata?: Record<string, any>;
 }
 
-const API_BASE_URL = 'https://silver-space-succotash-4g7r45pq64rfjv7-8000.app.github.dev';
+const API_BASE_URL = 'https://musical-space-couscous-wqgqw4669xc59vw-8000.app.github.dev';
 
 export const api = {
   // Agent operations
