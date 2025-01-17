@@ -34,7 +34,7 @@ export interface AgentInteractionResponse {
   metadata?: Record<string, any>;
 }
 
-const API_BASE_URL = 'http://localhost:8001';
+const API_BASE_URL = 'https://silver-space-succotash-4g7r45pq64rfjv7-8000.app.github.dev';
 
 export const api = {
   // Agent operations
@@ -190,6 +190,9 @@ export async function executeToolDirectly(name: string, params: Record<string, a
 export async function listAgents(): Promise<Agent[]> {
   try {
     const response = await fetch(`${API_BASE_URL}/agents/`);
+    console.log('Attempting to connect to:', API_BASE_URL);
+    
+    console.log('Response status:', response.status);
     const data = await response.json();
 
     if (!response.ok) {
